@@ -1,0 +1,14 @@
+---
+applications:
+- name: asrTomcatEjemploCloudant
+  random-route: false
+  path: target/asrTomcatEjemploCloudant.war
+  memory: 640M
+  instances: 1
+  host: asrTomcatEjemploCloudantMarina
+  domain: eu-gb.mybluemix.net
+  services:
+  - Cloudant-m7
+  - Language Translator-rr
+  - Visual Recognition-md
+  - Watson Assistant-88
